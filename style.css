@@ -11,7 +11,7 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-orange: #f7c470;
   --color-dark-orange: #dda65d;
   --color-black: #000000;
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
@@ -434,4 +434,36 @@ p {
 
 .speech-bubble__name a {
   color: var(--color-orange);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-orange);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  margin: 18px;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px;
+}
+
+.contact__links i {
+  transition: all var(--aniamation-duration) ease-in;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-pink);
 }
