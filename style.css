@@ -345,7 +345,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 260px;
+  width: 280px;
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
