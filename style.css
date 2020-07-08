@@ -112,7 +112,7 @@ p {
   color: var(--color-white);
   padding: 16px;
   padding-top: 0px;
-  transition: all var(--aniamation-duration) ease-in-out;
+  transition: background-color var(--aniamation-duration) ease-in-out;
   z-index: 1;
 }
 
@@ -146,8 +146,8 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 20px;
-  right: 38px;
+  top: 16px;
+  right: 24px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
@@ -407,7 +407,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-pink);
 }
 
 .project__description h3:after {
@@ -415,9 +415,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -527,8 +527,18 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 16px;
+    background-color: var(--color-orange);
+    transition: none;
   }
 
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
