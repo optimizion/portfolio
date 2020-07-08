@@ -111,13 +111,15 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  padding-top: 0px;
   transition: all var(--aniamation-duration) ease-in-out;
   z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-orange);
-  padding: 8px;
+  padding: 12px;
+  padding-top: 0px;
 }
 
 .navbar__logo {
@@ -485,6 +487,27 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-pink);
+}
+
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all var(--aniamation-duration) ease-in;
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
